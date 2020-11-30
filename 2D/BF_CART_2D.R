@@ -208,7 +208,7 @@ get_part_BF<- function(dataset,freq,mat,loss,configuration=F){
   ylab<- c(1:(max(dataset[,2])+1))
   axis(side= 1,at = xlab,labels = T,cex.axis=0.6)
   axis(side = 2,at= ylab,labels = T,cex.axis=0.6,font = 3)
-  text(x = dataset[,1],y=dataset[,2],labels = round(freq,3),cex = 0.9,xpd=NA,pos=4)
+  text(x = dataset[,1],y=dataset[,2],labels = round(freq,3),cex = 0.7,xpd=NA,pos=4)
   
   if(configuration== T){
   return(mat)
@@ -416,7 +416,7 @@ get_part_cart<- function(dataset,freq,mat,loss,configuration=F){
   ylab<- c(1:(max(dataset[,2])+1))
   axis(side= 1,at = xlab,labels = T,cex.axis=0.6)
   axis(side = 2,at= ylab,labels = T,cex.axis=0.6,font=3)
-  text(x = dataset[,1],y=dataset[,2],labels = round(freq,3),cex = 0.9,xpd=NA,pos=4)
+  text(x = dataset[,1],y=dataset[,2],labels = round(freq,3),cex = 0.7,xpd=NA,pos=4)
   
    if(configuration== T){
   return(mat)
@@ -864,7 +864,7 @@ data_graphs_2D<- function(dataset,order,k1,k2=0,u1,u2,runtime=F){
  #print(u2)
  
   
-  k<- c(2:(k1+k2)+1)
+  k<- c(2:(k1+k2+1))
   
   
   loss_bf<- c()

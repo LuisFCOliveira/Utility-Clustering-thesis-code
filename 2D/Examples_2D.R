@@ -159,8 +159,36 @@ order<-data.frame(var=c(lev1,lev2),factor=c(lev1,lev2))
 
 order
 
-data_graphs_2D(df,order= order,k1 = 7,u1 = c(5,12,9) ,u2= c(17,12,8) ,runtime = T)
+data_graphs_2D(df,order= order,k1 = 7,u1 = c(5,12,9) ,u2= c(10,25,15) ,runtime = T)
 
+
+
+
+#ex 6
+
+#ex 5
+
+lev1<-c(1:5)
+lev2<- c(1:5)
+
+
+set.seed(679)
+
+
+var1<- sample(lev1,size = 500,replace = T)
+
+var2<- sample(lev2,size = 500,replace = T)
+
+
+df<- data.frame(var1=var1,var2=var2)
+
+df
+
+order<-data.frame(var=c(lev1,lev2),factor=c(lev1,lev2))
+
+order
+
+data_graphs_2D(df,order= order,k1 = 0,k2=10,u1 = lev1**2 ,u2= lev2**2 ,runtime = T)
 
 ##############################################################################################
 
